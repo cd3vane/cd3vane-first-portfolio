@@ -178,10 +178,12 @@
   .splash .continue a:hover {
     background-color: rgba(255, 255, 255, .25);
   }
-  #about,#portfolio,#contact
+  
+  #about,#portfolio,#contact,#technologies
   {
-    padding-top:4em!important;
+    padding-top:2em!important;
   }
+
   section h2 {
       margin: 0;
       font-size: 3em;
@@ -366,4 +368,6 @@
 
 .app-block {
   flex-flow: row wrap;
+  padding-left: 30px;
+  padding-bottom: 2%;
 }
