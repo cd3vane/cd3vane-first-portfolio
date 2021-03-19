@@ -1,0 +1,98 @@
+﻿.devicons-visualstudio {
+    color:#401F7C;
+  }
+.devicons-html5 {
+    color: #E34C26;
+  }
+  
+  .devicons-css3 {
+    color: #0b73b8;
+  }
+  
+  .devicons-bootstrap {
+    color: #401F7C;
+  }
+
+  .devicons-php{
+      color:#007bb6;
+  }
+
+  .devicons-python{
+    color:#f0db4f;
+  }
+
+  .devicons-django{
+    color:darkgreen;
+  }
+
+  .devicons-mysql{
+    color:#007bb6;
+  }
+  
+  .devicons-wordpress {
+    color: #21759b;
+  }
+  
+  .devicons-javascript {
+    background: #f0db4f;
+  }
+  
+  .devicons-docker {
+    color: #0db7ed;
+  }
+  
+  .devicons-npm {
+    color: #cb3837;
+  }
+  
+
+  
+  .devicons-heroku {
+    color: #6567a5;
+  }
+  
+  .devicons-github_badge {
+    color: #ee513b;
+  }
+
+  a.link-twitter
+  {
+    color:#1DA1F2;
+  }
+  a.link-facebook
+  {
+   color: #3b5998;
+  }
+  a.link-linkedin
+  {
+    color:#007bb6;
+  }
+  a.link-instagram
+  {
+    color:#e95950;
+  }
+  a.link-facebook:hover{
+      background-color: #3b5998;
+      color: #fff;
+  }
+  
+  a.link-twitter:hover{
+      background-color: #1DA1F2;
+      color: #fff;
+  }
+  
+  a.link-codepen:hover{
+      background-color: black;
+      color: #fff;
+  }
+  
+  a.link-linkedin:hover{
+      background-color: #007bb6;
+      color: #fff;
+  }
+  a.link-instagram:hover{
+      background-color: #e95950;
+      color: #fff;
+  }
+  
+
