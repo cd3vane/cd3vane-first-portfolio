@@ -5,13 +5,20 @@
     <meta name="author" content="Charles DeVane">
     <title>Charles DeVane - Portfolio</title>
     
+    <!-- External scripts and CSS -->
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> 
+    <link href='//cdn.jsdelivr.net/npm/devicons@1.8.0/css/devicons.min.css' rel='stylesheet'>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    
+
+
+    <!-- My CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fonts_color.css">
-    <link href='//cdn.jsdelivr.net/npm/devicons@1.8.0/css/devicons.min.css' rel='stylesheet'>
   </head>
   <body>
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menu">
@@ -194,7 +201,7 @@
 <!-- Contact form -->
 	<div class="container-fluid contact-me-container content-section" id="contact">
 		<div class="container">
-			<h1 class="intro-text text-center">Contact Me</h1>
+			<h1 class="intro-text text-center">Send Me an Email</h1>
       <hr class="star-light">
 			<div class="row">
 				<div class="col-sm-12 col-md-12">
@@ -230,6 +237,8 @@
 			</div>
 		</div>
 	</div>
+  <?php include 'php/email.php';?>
+  
 <!-- Footer -->
 	<footer>
 		<div class="container footer-container">
@@ -246,18 +255,18 @@
 					<div class="text-center">
 						<h4 class="text-center">You can also find me here:</h4>
 				    <div class="text-center social-buttons">
-						<a href="#" class="btn btn-default btn-lg social-button link-github"><i class="fa fa-github"></i>
+						<a href="https://github.com/cd3vane" class="btn btn-default btn-lg social-button link-github"><i class="fa fa-github"></i>
 						</a>
 
-						<a href="https://codepen.io/simplysuvi/" class="btn btn-default btn-lg social-button link-codepen"><i class="fa fa-codepen"></i>
+						<a href="https://codepen.io/cd3vane/" class="btn btn-default btn-lg social-button link-codepen"><i class="fa fa-codepen"></i>
 						</a>
 
-						<a href="#" class="btn btn-default btn-lg social-button link-twitter"><i class="fa fa-twitter"></i>
+						<a href="https://twitter.com/cd3vane" class="btn btn-default btn-lg social-button link-twitter"><i class="fa fa-twitter"></i>
 						</a>
 
-						<a href="https://www.linkedin.com/in/suvijainhere" class="btn btn-default btn-lg social-button link-linkedin"><i class="fa fa-linkedin"></i>
+						<a href="https://www.linkedin.com/in/cd3vane" class="btn btn-default btn-lg social-button link-linkedin"><i class="fa fa-linkedin"></i>
 						</a>
-          <a href="https://instagram.com/simplysuvi" class="btn btn-default btn-lg social-button link-instagram"><i class="fa fa-instagram"></i>
+          <a href="https://instagram.com/cd3vane" class="btn btn-default btn-lg social-button link-instagram"><i class="fa fa-instagram"></i>
 						</a>
 					
 				</div>
@@ -268,7 +277,8 @@
 
     
     <!-- Bootstrap core JavaScript -->
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/email.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
   </body>
 </html>

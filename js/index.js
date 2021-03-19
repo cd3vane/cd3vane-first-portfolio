@@ -80,14 +80,6 @@ $(document).ready(function () {
                     var humanize = Math.round(Math.random() * (100 - 30)) + this.typeSpeed;
                     var self = this;
     
-                    // ------------- optional ------------- //
-                    // backpaces a certain string faster
-                    // ------------------------------------ //
-                    // if (self.arrayPos == 1){
-                    //  self.backDelay = 50;
-                    // }
-                    // else{ self.backDelay = 500; }
-    
                     // containg entire typing function in a timeout
                     setTimeout(function() {
     
