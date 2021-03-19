@@ -14,6 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
     
+    
 
 
     <!-- My CSS -->
@@ -205,40 +206,42 @@
       <hr class="star-light">
 			<div class="row">
 				<div class="col-sm-12 col-md-12">
-					<div class="form-group">
-						<div class="input-group">
-							<div class="input-group-addon"><i class="fa fa-user"></i></div>
-							<input type="text" class="form-control" id="name" placeholder="Name">
-						</div>
-					</div>
-					
-					<div class="form-group">
-						<div class="input-group">
-              <div class="input-group-addon"><i class="fa fa-at"></i></div>
-							<input type="text" class="form-control" id="email" placeholder="Email ID">
-						</div>
-					</div>
 
-					<div class="form-group">
-						<div class="input-group">
-							<div class="input-group-addon"><i class="fa fa-phone"></i></div>
-							<input type="text" class="form-control" id="phone" placeholder="Phone Number">
-						</div>
-					</div>
-				</div>
+        <form id="contact-form">
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                <input type="text" class="form-control" name="user_name" placeholder="Name">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-addon"><i class="fa fa-at"></i></div>
+                <input type="email" class="form-control" name="user_email" placeholder="Email ID">
+              </div>
+            </div>
 
-				<div class="col-sm-12">
-					<textarea class="form-control" rows="5" placeholder="Message"></textarea>
-				</div>
-			</div>
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-addon"><i class="fa fa-phone"></i></div>
+                <input type="text" class="form-control" name="contact_number" placeholder="Phone Number">
+              </div>
+            </div>
+          </div>
 
-			<div class="text-center">
-				<button class="btn btn-default submit-button btn-lg btn-primary"><i class="fa fa-paper-plane"></i> Send</button>
-			</div>
-		</div>
-	</div>
-  <?php include 'php/email.php';?>
-  
+          <div class="col-sm-12">
+            <textarea class="form-control" rows="5" name="message" placeholder="Message"></textarea>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <button class="btn btn-default submit-button btn-lg btn-primary"><i class="fa fa-paper-plane"></i> Send</button>
+        </div>
+      </div>
+    </div>
+  </form>
+
 <!-- Footer -->
 	<footer>
 		<div class="container footer-container">
@@ -277,6 +280,7 @@
 
     
     <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script src="js/index.js"></script>
     <script src="js/email.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>

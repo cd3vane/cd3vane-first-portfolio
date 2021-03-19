@@ -1,36 +1,19 @@
-const constraints = {
-    name: {
-        presence: { allowEmpty: false }
-    },
-    email: {
-        presence: { allowEmpty: false },
-        email: true
-    },
-    message: {
-        presence: { allowEmpty: false }
-    }
-};
+(function() {
+    // https://dashboard.emailjs.com/admin/integration
+    emailjs.init('user_fmjOL1kBvhDpFauHYBmiw');
+})();
 
-const form = document.getElementById('contact-form');
-
-form.addEventListener('submit', function (event) {
-    const formValues = {
-        name: form.elements.name.value,
-        email: form.elements.email.value,
-        message: form.elements.message.value
-    };
-
-    const errors = validate(formValues, constraints);
-
-    if (errors) {
+window.onload = function() {
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
         event.preventDefault();
-        const errorMessage = Object
-            .values(errors)
-            .map(function (fieldValues) {
-                return fieldValues.join(', ')
-            })
-            .join("\n");
-
-        alert(errorMessage);
-    }
-}, false);
+        // generate a five digit number for the contact_number variable
+        this.contact_number.value = Math.random() * 100000 | 0;
+        // these IDs from the previous steps
+        emailjs.sendForm('service_i2st2jh', 'template_2clwecr', this)
+            .then(function() {
+                console.log('SUCCESS!');
+            }, function(error) {
+                console.log('FAILED...', error);
+            });
+    });
+}
