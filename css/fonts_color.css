@@ -94,5 +94,9 @@
       background-color: #e95950;
       color: #fff;
   }
+  a.link-github:hover{
+    background-color: orangered;
+    color: #fff;
+}
   
 
