@@ -352,9 +352,7 @@
     left: -9999px;
 }
 .content {
-  width: 80vw;
   max-width: 45em;
-  padding: 1.5em 2em;
   margin: 0 auto;
   background: rgba(255, 255, 255, .75);
 }
