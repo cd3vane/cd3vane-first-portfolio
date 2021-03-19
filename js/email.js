@@ -4,7 +4,8 @@
 })();
 
 window.onload = function() {
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
+    var frm = document.getElementById('contact-form')
+    frm.addEventListener('submit', function(event) {
         event.preventDefault();
         // generate a five digit number for the contact_number variable
         this.contact_number.value = Math.random() * 100000 | 0;
@@ -12,8 +13,14 @@ window.onload = function() {
         emailjs.sendForm('service_i2st2jh', 'template_2clwecr', this)
             .then(function() {
                 console.log('SUCCESS!');
+                frm.reset();
+                alert("Email successafully sent!");
+                
             }, function(error) {
                 console.log('FAILED...', error);
+                frm.reset();
+                alert("Something went wrong, try again");
             });
     });
+  
 }
