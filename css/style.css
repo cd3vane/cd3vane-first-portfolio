@@ -136,6 +136,7 @@
   h1.intro-text
   {
     font-family:'Teko', serif;
+    font-size:50px;
     margin:0;
     color:#fff;
     overflow: hidden;
@@ -221,10 +222,16 @@
     padding-bottom: 50px!important;
   }
 
-  section h2 {
-      margin: 0;
-      font-size: 3em;
+  .about-row{
+    padding-top: 30px;
   }
+
+  section h2 {
+      margin: 20px;
+      font-size: 3em;
+      padding-bottom: 20px;
+  }
+  
   section.success {
       color: #fff;
       background-color:#062436;
