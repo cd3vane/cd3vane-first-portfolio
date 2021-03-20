@@ -282,7 +282,7 @@
   
   /* PORTFOLIO */
   .portfolio{
-    background-color: #ecf3f4;
+   background-color:#87a8b7;
   }
   .effect-1 {
     position: relative;
@@ -346,7 +346,7 @@
   /* Contact */
   .contact-me-container{
       padding:3%;
-      background:#094e67;
+      background:#0d445f;
       height:auto;
   }
   .fa-user,.fa-at,.fa-phone
@@ -411,13 +411,13 @@
 .content {
   max-width: 45em;
   margin: 0 auto;
-  background:  #ecf3f4;
+  background:  #b6babf;
   border-radius: 10px;
   box-shadow: 0 4px 10px -2px rgba(0,0,0,1)
 }
 
 .tech-container{
-  background-color:#094e67;
+  background-color:#0d445f;
 }
 
 .contact-content {

@@ -187,10 +187,17 @@
  }
  /* Extra stuff just to make the demo pretty. */
   h1 {
+    font-family: 'Teko', serif;
+    font-weight: 800;
     margin-bottom: 0px;
-    font-size: 55px;
+    font-size: 65px;
     line-height: 1;
     padding-top: 30px;
+ }
+
+ p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
  }
   h2 {
     font-family: 'Montserrat', sans-serif;
