@@ -1,3 +1,4 @@
+var scroll = new SmoothScroll('a[href*="#"]');
 $(document).ready(function () {
     $( window ).resize( function() {
         centerSplash();

@@ -9,10 +9,12 @@
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> 
     <link href='//cdn.jsdelivr.net/npm/devicons@1.8.0/css/devicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Teko">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     
     
 
@@ -38,261 +40,222 @@
             <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#technologies">Technologies</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>  
             <li><a href="#contact">Contact</a></li> 
           </ul> 
         </div><!--/.nav-collapse -->
       </div>
     </div>
-
 <div class="container-fluid splash" id="splash">
   <div class="container">
-    <img src="img/profile_img.jpg" alt="Profile Image" class="profile-image">
-    <h1>WELCOME!</h1> 
+    <h1>Hi, My name is Charles DeVane</h1> 
     <h1 class="intro-text"><span class="lead" id="typed">I am a </span></h1>
     <span class="continue"><a href="#about"><i class="fa fa-angle-down"></i></a></span>
+    
   </div>
-</div>
-        <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About Me</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p class="content-text">Hello, I am a junior software developer based in Boca Raton, Florida. I am currently most interested in learning and growing as a Unity developer.
-                    </p>
-                </div>
-                <div class="col-lg-4">
-                    <p class="content-text">If you are looking to build a website or create a game, feel free to reach out, I would love to work together.</p>
-             </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center contact-button">
-                    <a href="#contact" class="btn btn-lg btn-outline">
-                        <i class="fa fa-envelope"></i> Contact Me
-                    </a>
-                </div>
+  </div>
+  <!--About Me-->
+<section class="success" id="about">
+  <div class="container">
+      <div class="about-row">
+          <div class="col-lg-12 text-center">
+              <h2>About Me</h2>
+              <img src="img/profile_img.jpg" alt="Profile Image" class="profile-image">
+              <hr class="star-light">
+          </div>
+      </div>
+      <div class="about-row">
+          <div class="col-lg-4 col-lg-offset-2">
+              <p class="content-text">Hello, I am a junior software developer based in Boca Raton, Florida. I am currently most interested in learning and growing as a Unity developer.
+              </p>
+          </div>
+          <div class="col-lg-4">
+              <p class="content-text">If you are looking to build a website or create a game, feel free to reach out, I would love to work together.</p>
+       </div>
+          <div class="col-lg-8 col-lg-offset-2 text-center contact-button">
+              <a href="#contact" class="btn btn-lg btn-outline">
+                  <i class="fa fa-envelope"></i> Contact Me
+              </a>
+          </div>
+      </div>
+  </div>
+</section>
+
+        <!-- Tech Section -->
+        <div class="tech-container" id="technologies">
+          <div class="content">
+            <h1 class="text-center">Technologies</h1>
+            <p class="text-center">These are some of the technologies that I know and that I am interested in. Most of them are used in some form in the portfolio section.</p>
+            <hr class="star-portfolio">
+            <div class="app-block center">
+              <i class="devicons devicons-unity_small" title="Unity">
+                  <span class="screen-reader-text">Unity</span>
+              </i>
+              <i class="devicons devicons-visualstudio" title="Visual Studio">
+                  <span class="screen-reader-text">VS Code</span>
+              </i>
+              <i class="devicons devicons-html5" title="HTML5">
+              <span class="screen-reader-text">HTML5</span>
+              </i>
+              <i class="devicons devicons-css3" title="CSS3">
+                <span class="screen-reader-text">CSS3</span>
+              </i>
+              <i class="devicons devicons-bootstrap" title="Bootstrap">
+                <span class="screen-reader-text">Bootstrap framework</span>
+              </i>
+              <i class="devicons devicons-php" title="PHP">
+                  <span class="screen-reader-text">PHP</span>
+                </i>
+              <i class="devicons devicons-python" title="Python">
+                  <span class="screen-reader-text">Python</span>
+              </i>
+              <i class="devicons devicons-django" title="Django">
+                  <span class="screen-reader-text">Django</span>
+              </i>
+              <i class="devicons devicons-mysql" title="MySQL">
+                  <span class="screen-reader-text">MySQL</span>
+              </i>
+
+              <i class="devicons devicons-javascript" title="JavaScript">
+                <span class="screen-reader-text">JavaScript</span>
+              </i>
+              <i class="devicons devicons-terminal" title="command line">
+                <span class="screen-reader-text">the command line</span>
+              </i>
+              <i class="devicons devicons-github_badge" title="GIT">
+                <span class="screen-reader-text">GIT version control</span>
+              </i>
+              <i class="devicons devicons-linux" title="Linux">
+                  <span class="screen-reader-text">Linux</span>
+              </i>
+              <i class="devicons devicons-docker" title="Docker">
+                  <span class="screen-reader-text">Docker</span>
+                </i>
+              <i class="devicons devicons-heroku" title="Heroku">
+                <span class="screen-reader-text">Heroku app deployment</span>
+              </i>
             </div>
         </div>
-    </section>
-        <div class="container content" id="technologies">
-          <h1 class="text-center">Technologies</h1>
-          <p class="text-center">These are some of the technologies that I know and that I am interested in. Most of them are used in some form in the portfolio section.</p>
-          <hr class="star-portfolio">
-          <div class="app-block center">
-            <i class="devicons devicons-unity_small" title="Unity">
-                <span class="screen-reader-text">Unity</span>
-            </i>
-            <i class="devicons devicons-visualstudio" title="Visual Studio">
-                <span class="screen-reader-text">VS Code</span>
-            </i>
-            <i class="devicons devicons-html5" title="HTML5">
-            <span class="screen-reader-text">HTML5</span>
-            </i>
-            <i class="devicons devicons-css3" title="CSS3">
-              <span class="screen-reader-text">CSS3</span>
-            </i>
-            <i class="devicons devicons-bootstrap" title="Bootstrap">
-              <span class="screen-reader-text">Bootstrap framework</span>
-            </i>
-            <i class="devicons devicons-php" title="PHP">
-                <span class="screen-reader-text">PHP</span>
-              </i>
-            <i class="devicons devicons-python" title="Python">
-                <span class="screen-reader-text">Python</span>
-            </i>
-            <i class="devicons devicons-django" title="Django">
-                <span class="screen-reader-text">Django</span>
-            </i>
-            <i class="devicons devicons-mysql" title="MySQL">
-                <span class="screen-reader-text">MySQL</span>
-            </i>
-
-            <i class="devicons devicons-javascript" title="JavaScript">
-              <span class="screen-reader-text">JavaScript</span>
-            </i>
-            <i class="devicons devicons-terminal" title="command line">
-              <span class="screen-reader-text">the command line</span>
-            </i>
-            <i class="devicons devicons-github_badge" title="GIT">
-              <span class="screen-reader-text">GIT version control</span>
-            </i>
-            <i class="devicons devicons-linux" title="Linux">
-                <span class="screen-reader-text">Linux</span>
-            </i>
-            <i class="devicons devicons-docker" title="Docker">
-                <span class="screen-reader-text">Docker</span>
-              </i>
-            <i class="devicons devicons-heroku" title="Heroku">
-              <span class="screen-reader-text">Heroku app deployment</span>
-            </i>
-          </div>
         </div>
 <!-- Portfolio -->
-<div class="container-fluid card-hover content-section" id="portfolio">
-  <div class="portfolio-container container">
+<section class="portfolio" id="portfolio">
+  <div class="portfolio-container">
     <h1 class="text-center">Check out some of my work</h1>
     <p class="text-center">Click the cards view more on Github/Codepen</p>
     <hr class="star-portfolio">
     <div class="row">
-      
-      <div class="col-md-6 col-xs-12 col-sm-6 ">
-        <div class="hvrbox">
-          <img src="img/areacode.jpg" alt="AreaCode407Kids" class="hvrbox-layer_bottom">
-          <div class="hvrbox-layer_top hvrbox-layer_slideup">
-            <div class="row">
-              <div class="col-xs-12">
-              <h4>AreaCode407Kids</h4>
-              </div>
-              <p class="col-xs-12">
-                This is a more professional project that I was able to work on to help a local business get their Spring Summer catalog up and running on the website as well as writing a lot of the css that is now used.
+
+      <div class="column">
+          <div class="effect-1">
+            <div class="effect-img">
+              <img src="https://media.istockphoto.com/photos/vibrant-tie-dye-picture-id184372785?k=6&m=184372785&s=612x612&w=0&h=GzYhGl2L6BxHJkOWpPrlj9gUrZins4djZcKT0m5psFo=" alt="Image">
+            </div>
+            <div class="effect-text">
+              <h2>AreaCode407Kids <i class="fa fa-angle-up"></i></h2>
+                <p>
+                  My work on both the backend and frontend of a local businesses website.
                 </p>
-            </div>
-              <div class="row footer">
-                <div class="col-xs-4">
-                  <a href="https://www.areacode407kids.com">
-                    <i class="fa fa-arrow-right"></i>
-                    View Website
-                  </a>
+                <div class="effect-btn">
+                  <a class="btn" href="https://www.areacode407kids.com/" target="_blank">View Website</a>
                 </div>
-              </div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-md-6 col-xs-12 col-sm-6 ">
-        <div class="hvrbox">
-          <img src="img/background.jpg" alt="Mountains" class="hvrbox-layer_bottom">
-          <div class="hvrbox-layer_top hvrbox-layer_slideup">
-            <div class="row">
-              <div class="col-xs-12">
-              <h4>Single Page Portfolio(This Website)</h4>
-              </div>
-              <p class="col-xs-12">
-                Github Pages website written with only HTML/CSS/JS to showcase my projects and skills.
-              </p>
+        <div class="column">
+          <div class="effect-1">
+            <div class="effect-img">
+              <img src="img/back.jpg" alt="Image">
             </div>
-              <div class="row footer">
-                <div class="col-xs-4">
-                  <a href="https://github.com/cd3vane/cd3vane.github.io">
-                    <i class="fa fa-arrow-right"></i>
-                    View Github
-                  </a>
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-xs-12 col-sm-6 ">
-        <div class="hvrbox">
-          <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8d2Vic2l0ZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Mountains" class="hvrbox-layer_bottom">
-          <div class="hvrbox-layer_top hvrbox-layer_slideup">
-            <div class="row">
-              <div class="col-xs-12">
-              <h4>Template Blog Website</h4>
-              </div>
-              <p class="col-xs-12">
-                Written in Python/Django and turned into a template because I never got around to writing a personal blog.
+            <div class="effect-text">
+              <h2>Single Page Portfolio <i class="fa fa-angle-up"></i></h2>
+                <p>
+                  This is where you are currently. Github Pages website written with only HTML/CSS/JS to showcase my projects and skills.
                 </p>
-            </div>
-              <div class="row footer">
-                <div class="col-xs-4">
-                  <a href="https://github.com/cd3vane/django-website">
-                    <i class="fa fa-arrow-right"></i>
-                    View Github
-                  </a>
+                <div class="effect-btn">
+                  <a class="btn btn-outline" href="https://github.com/cd3vane/cd3vane.github.io" target="_blank">View Github </a>
                 </div>
-              </div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-md-6 col-xs-12 col-sm-6 ">
-        <div class="hvrbox">
-          <img src="https://images.unsplash.com/photo-1602208737571-63c54869174a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8aW90fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="AreaCode407Kids" class="hvrbox-layer_bottom">
-          <div class="hvrbox-layer_top hvrbox-layer_slideup">
-            <div class="row">
-              <div class="col-xs-12">
-              <h4>Doorbell and Lock Azure/Raspberry Pi IoT Device</h4>
-              </div>
-              <p class="col-xs-12">
-                  Group project that used Azure Web service to display account info and register lock and unlock as well as doorbell press events over the internet.
+        <div class="column">
+          <div class="effect-1">
+            <div class="effect-img">
+              <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8d2Vic2l0ZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Image">
+            </div>
+            <div class="effect-text">
+              <h2>Template Blog Website <i class="fa fa-angle-up"></i></h2>
+                <p>
+                  Written in Python/Django and turned into a template because I never got around to writing a personal blog.
+                  </p>
+                <div class="effect-btn">
+                  <a class="btn" href="https://github.com/cd3vane/django-website" target="_blank">View Github</a>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="effect-1">
+            <div class="effect-img">
+              <img src="https://images.unsplash.com/photo-1602208737571-63c54869174a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8aW90fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Image">
+            </div>
+            <div class="effect-text">
+              <h2>Azure IoT Project <i class="fa fa-angle-up"></i></h2>
+                <p>
+                  We used Azure Web service to display account info and register lock/unlock as well as doorbell press events over the internet from  a RPi.
                 </p>
-            </div>
-              <div class="row footer">
-                <div class="col-xs-4">
-                  <a href="https://github.com/cd3vane/smart-doorbell">
-                    <i class="fa fa-arrow-right"></i>
-                    View Github
-                  </a>
+                <div class="effect-btn">
+                  <a class="btn" href="https://github.com/cd3vane/smart-doorbell" target="_blank">View Github</a>
                 </div>
-              </div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-md-6 col-xs-12 col-sm-6 ">
-        <div class="hvrbox">
-          <img src="https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fGphdmFzY3JpcHR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Mountains" class="hvrbox-layer_bottom">
-          <div class="hvrbox-layer_top hvrbox-layer_slideup">
-            <div class="row">
-              <div class="col-xs-12">
-              <h4>Various JavaScript Projects</h4>
-              </div>
-              <p class="col-xs-12">
-                Link to some of my practice with HTML/CSS/JS that is on codepen these will eventually be turned into more polished projects of their own.
-              </p>
+        <div class="column">
+          <div class="effect-1">
+            <div class="effect-img">
+              <img src="https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fGphdmFzY3JpcHR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Image">
             </div>
-              <div class="row footer">
-                <div class="col-xs-4">
-                  <a href="https://codepen.io/cd3vane">
-                    <i class="fa fa-arrow-right"></i>
-                    View Codepen
-                  </a>
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-xs-12 col-sm-6 ">
-        <div class="hvrbox">
-          <img src="https://cdn.pixabay.com/photo/2019/09/06/03/15/sudoku-4455317__340.jpg" alt="Mountains" class="hvrbox-layer_bottom">
-          <div class="hvrbox-layer_top hvrbox-layer_slideup">
-            <div class="row">
-              <div class="col-xs-12">
-              <h4>Sudoku Solver</h4>
-              </div>
-              <p class="col-xs-12">
-                Sudoku solver written in Python to implement the backtracking algorithm.
+            <div class="effect-text">
+              <h2>Various JavaScript Projects <i class="fa fa-angle-up"></i></h2>
+                <p>
+                  Link to some of my practice with HTML/CSS/JS that is on codepen these will eventually be turned into more polished projects of their own.
                 </p>
-            </div>
-              <div class="row footer">
-                <div class="col-xs-4">
-                  <a href="https://github.com/cd3vane/SudokuSolver">
-                    <i class="fa fa-arrow-right"></i>
-                    View Github
-                  </a>
+                <div class="effect-btn">
+                  <a class="btn" href="https://codepen.io/cd3vane" target="_blank">View Codepen</a>
                 </div>
-              </div>
+            </div>
           </div>
         </div>
-      </div>     
-    </div>
+
+        <div class="column">
+          <div class="effect-1">
+            <div class="effect-img">
+              <img src="https://cdn.pixabay.com/photo/2019/09/06/03/15/sudoku-4455317__340.jpg" alt="Image">
+            </div>
+            <div class="effect-text">
+              <h2>Sudoku Solver <i class="fa fa-angle-up"></i></h2>
+                <p>
+                  Sudoku solver written in Python to implement the backtracking algorithm.
+                </p>
+                <div class="effect-btn">
+                  <a class="btn btn-lg btn-outline" href="https://github.com/cd3vane/SudokuSolver" target="_blank">View Github</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
   </div>
-</div>
-
+</section>
     
 <!-- Contact form -->
 	<div class="container-fluid contact-me-container content-section" id="contact">
-		<div class="container">
+		<div class="container contact-content">
 			<h1 class="intro-text text-center">Send Me an Email</h1>
       <hr class="star-light">
-			<div class="row">
+			<div class="contact-row">
 				<div class="col-sm-12 col-md-12">
 
         <form id="contact-form">
@@ -322,37 +285,28 @@
             <textarea class="form-control" rows="5" name="message" placeholder="Message"></textarea>
           </div>
         </div>
-
+      </form>
         <div class="text-center">
           <button class="btn btn-default submit-button btn-lg btn-primary"><i class="fa fa-paper-plane"></i> Send</button>
         </div>
       </div>
-    </div>
-  </form>
+      </div>
+  
 
 <!-- Footer -->
 	<footer>
-		<div class="container footer-container">
-			<div class="row footer-row">
+		<div class="container">
+			<div class="footer-row">
 				<div class="social-section">
 					<div class="text-center">
 						<h4 class="text-center">You can also find me here:</h4>
-				    <div class="text-center social-buttons">
-						<a href="https://github.com/cd3vane" target="_blank" class="btn btn-default btn-lg social-button link-github"><i class="fa fa-github"></i>
-						</a>
-
-						<a href="https://codepen.io/cd3vane/" target="_blank" class="btn btn-default btn-lg social-button link-codepen"><i class="fa fa-codepen"></i>
-						</a>
-
-						<a href="https://twitter.com/cd3vane" target="_blank" class="btn btn-default btn-lg social-button link-twitter"><i class="fa fa-twitter"></i>
-						</a>
-
-						<a href="https://www.linkedin.com/in/cd3vane" target="_blank" class="btn btn-default btn-lg social-button link-linkedin"><i class="fa fa-linkedin"></i>
-						</a>
-            <a href="https://instagram.com/cd3vane" target="_blank" class="btn btn-default btn-lg social-button link-instagram"><i class="fa fa-instagram"></i>
-						</a>
-					
-				</div>
+				    <ul class="social-networks spin-icon">
+              <li><a href="https://www.linkedin.com/cd3vane" class="icon-linkedin">LinkedIn</a></li>
+              <li><a href="https://twitter.com/cd3vane" class="icon-twitter">Twitter</a></li>
+              <li><a href="https://www.facebook.com/cd3vane" class="icon-facebook">Facebook</a></li>
+              <li><a href="https://github.com/cd3vane" class="icon-github">GitHub</a></li>
+              <li><a href="https://instagram.com/cd3vane" class="icon-instagram">Instagram</a></li>
+            </ul>
 			</div><hr class="copyright">
             <small><i class="fa fa-copyright"></i> COPYRIGHTS 2021 ALL RIGHTS RESERVED</small>
 		</div>
