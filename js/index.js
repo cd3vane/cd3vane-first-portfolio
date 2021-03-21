@@ -3,6 +3,8 @@ $(document).ready(function () {
     $( window ).resize( function() {
         centerSplash();
     });
+
+ 
     
     !function($){
     
@@ -231,3 +233,4 @@ $(document).ready(function () {
     
         });
 });
+    
