@@ -136,6 +136,7 @@
   h1.intro-text
   {
     font-family:'Teko', serif;
+    font-size:50px;
     margin:0;
     color:#fff;
     overflow: hidden;
@@ -220,6 +221,7 @@
     padding-bottom: 50px!important;
   }
 
+
   @media only screen and (max-width: 768px) {
     section h2 {
         margin: 0;
@@ -299,7 +301,7 @@
   
   /* PORTFOLIO */
   .portfolio{
-    background-color: #ecf3f4;
+   background-color:#87a8b7;
   }
   .effect-1 {
     position: relative;
