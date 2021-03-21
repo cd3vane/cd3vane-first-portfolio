@@ -184,8 +184,7 @@
     90% {
       transform: translate3d(0, -2px, 0);
    }
- }
- /* Extra stuff just to make the demo pretty. */
+  }
   h1 {
     font-family: 'Teko', serif;
     font-weight: 800;
