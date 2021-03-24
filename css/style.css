@@ -30,6 +30,10 @@
     background-color: rgba(51, 51, 51, 0.377);
     
   }
+
+  .movie-img{
+    height: 256px;
+  }
   .navbar-nav li a
   {
     color:black!important;
@@ -328,6 +332,20 @@
     width: 100%;
     height: auto;
   }
+  @media only screen and (max-width: 767px) {
+  .effect-1 .effect-img-mov img {
+    width: 100%;
+    height: 256px;
+  }
+  }
+
+  @media only screen and (min-width: 767px) {
+    .effect-1 .effect-img-mov img {
+      width: 100%;
+      height: 359.9px;
+    }
+  }
+
   
   .effect-1 .effect-text {
     position: absolute;
