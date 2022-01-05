@@ -11,7 +11,7 @@ window.onload = function() {
         this.contact_number.value = Math.random() * 100000 | 0;
         // these IDs from the previous steps
         if(validateForm() && ValidateEmail()){
-            emailjs.sendForm('service_i2st2jh', 'template_2clwecr', this)
+            emailjs.sendForm('service_luowxga', 'template_2clwecr', this)
             .then(function() {
                 console.log('SUCCESS!');
                 frm.reset();
