@@ -220,7 +220,7 @@ $(document).ready(function () {
     $(function(){
     
             $("#typed").typed({
-                strings: ["web developer","game developer","tech enthusiast"], //Strings to display when typing
+                strings: ["full stack developer","blockchain developer","tech enthusiast"], //Strings to display when typing
                 typeSpeed: 40,
                 backDelay: 600,
                 loop: true,
